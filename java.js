@@ -1,4 +1,4 @@
-var click=0
+var click=10
   function getIncrement()
   {
     document.getElementById('display').style.background="white"
@@ -9,7 +9,7 @@ var click=0
 
     
   }
-  var click=0;
+ 
   function getDecrement()
   {
     document.getElementById('display').style.background="white"
@@ -19,6 +19,17 @@ var click=0
   document.getElementById("inp").value=click
   
   
+  }
+  function setDefault(){
+  
+    document.getElementById('display').style.background="white"
+    document.getElementById("display").innerHTML=""
+document.getElementById("inp").value=10
+click=10
+clearInterval(myVar);
+
+  
+
   }
 
  
@@ -66,17 +77,7 @@ var click=0
 
   }
  
-  function setDefault(){
-  
-    document.getElementById('display').style.background="white"
-document.getElementById("inp").value=10
 
-click=10
-clearInterval(myVar);
-document.getElementById("display").innerHTML=""
-  
-
-  }
 
   
   
